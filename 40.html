@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Quiz</title>
+
+  <link rel="stylesheet"  href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+<body>
+<div id="main">
+<div id="page1" class="page40">
+    <div id="page40a" class="animated slideInLeft40"></div>
+    
+    
+    <h3>Your score is <span id="scoring"></span><br/><span id="result"></span></h3>
+    
+   
+   
+    <!-- Agar user tidak bisa back ke halaman quiz sebelumnya --> 
+	
+	<!-- <div id="back" class="animated slideInRight2">
+    <a href="soal3a.html"><img src="image/back.png"/></a>    
+    </div>-->
+    
+</div>
+</div>
+
+<script>
+// Nilai di session yang tersimpan
+var score = sessionStorage.clickcount;
+
+// Pembulatan ke atas
+var total = Math.ceil(score*6.666);
+
+// Jika total lebih dari 80, maka lulus
+if(total > 80) {
+document.getElementById("result").innerHTML = "Congratulation!";
+} else {
+document.getElementById("result").innerHTML = "Sorry! Please try again";
+}
+
+// Validasi jika user langsung ke halaman 40.html tanpa jawab quiz, maka diberikan nilai 0
+if(total) {
+document.getElementById("scoring").innerHTML = total;
+} else {
+document.getElementById("scoring").innerHTML = "0";
+}
+</script>
+
+</body>
+</html>

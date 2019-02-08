@@ -1,0 +1,78 @@
+
+
+#benar {
+margin: 0;
+padding: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 5555;
+visibility: hidden;
+}
+
+.benar {
+width: 934px;
+height: 464px;
+background-image:url(../image/benar.png);
+border-radius: 10px;
+position: absolute;
+left: 54px;
+top: 230px;
+}
+
+.next-button {
+width: 139px;
+height: 50px;
+background: url(../image/nextred.png);
+display: block;
+font-family:'Open Sans', calibri;
+text-align: right;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: 350px;
+left: 400px;
+}
+
+#benar:target {
+visibility: visible;
+}
+
+
+#salah {
+margin: 0;
+padding: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 5555;
+visibility: hidden;
+}
+
+.salah {
+width: 934px;
+height: 464px;
+background-image:url(../image/salah.png);
+border-radius: 10px;
+position: absolute;
+left: 54px;
+top: 230px;
+}
+
+.ulang-button {
+width: 139px;
+height: 50px;
+background: url(../image/ulang.png);
+display: block;
+font-family:'Open Sans', calibri;
+text-align: right;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: 350px;
+left: 400px;
+}
+
+#salah:target {
+visibility: visible;
+}
